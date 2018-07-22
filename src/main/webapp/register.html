@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>注册账号</title>
+        <link rel="stylesheet" href="css/register.css">
+        <link rel="stylesheet" href="css/buttons.css">
+
+        <!--
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	-->
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/register.js"></script>
+    </head>
+    <body>
+        <div class="login-box">
+            <div class="login-box-head">
+                注册账号
+            </div>
+            <div class="register-box-body">
+                <form action="/register" method="post" id="form-register">
+                    <div class="user-box"><span class="span1">账　号</span><input type="text" name="username" id="user"></div>
+                    <div class="password-box">
+                        <span class="span1">密　码</span><input type="password" name="password" id="password"></div>
+                    <div class="user-box"><span class="span1">邮　箱</span><input type="text"
+                                                                               name="email" id="email">
+                    </div>
+                    <div class="user-box">
+                        <span class="span1">验证码</span><input type="text" name="code" id="validation-input">
+                        <input type="button" value="发送验证码" id="button-send"
+                               class="utton button-block button-rounded button-action button-large">
+                    </div>
+                    <div class="login-box-button">
+                        <input id="register-button" type="button" value="登录"
+                               onclick="javascrtpt:window.location.href='/login.html'"
+                               class="button button-block button-rounded button-primary button-large">
+                        <input id="login-button" type="submit" value="提交"
+                               class="button button-block button-rounded button-highlight button-large">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

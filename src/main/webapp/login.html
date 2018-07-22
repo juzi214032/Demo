@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>登录系统</title>
+        <link rel="stylesheet" href="css/login.css">
+        <link rel="stylesheet" href="css/buttons.css">
+    </head>
+    <body>
+        <div class="login-box">
+            <div class="login-box-head">
+                用户登录
+            </div>
+            <div class="login-box-body">
+                <form action="/login" method="post">
+                    <div class="user-box"><span class="span1">账号</span><input type="text" name="username" id="user"></div>
+                    <div class="password-box"><span class="span1">密码</span><input type="password" name="password" id="password"></div>
+                    <div class="login-box-button">
+                        <input id="register-button" type="button" value="注册" onclick="javascrtpt:window.location.href='/register.html'" class="button button-block button-rounded button-highlight button-large">
+                        <input id="login-button" type="submit" value="登录" class="button button-block button-rounded button-primary button-large">
+                    </div>
+                    <a href="#" class="span2">忘记密码？</a>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

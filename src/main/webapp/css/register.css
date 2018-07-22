@@ -1,0 +1,138 @@
+body {
+    background-image: url("../img/background.png");
+    background-size: cover;
+}
+
+input {
+    height: 40px;
+    width: 310px;
+}
+
+form {
+    /*text-align: center;*/
+}
+
+a:link{
+    text-decoration: none;
+    color: #368ae2;
+}
+
+a:focus{
+    text-decoration: underline;
+}
+
+.login-box {
+    background-color: white;
+    width: 460px;
+    height: 550px;
+    position: absolute;
+    top: 180px;
+    left: 1180px;
+
+}
+
+.login-box-head {
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #368ae2;
+}
+
+.register-box-body {
+    height: 330px;
+}
+
+.user-box, .password-box {
+    /*background-color: chocolate;*/
+    margin-top: 30px;
+}
+
+.login-box, login-box-head, .register-box-body {
+    border-radius: 8px;
+}
+
+.span1 {
+    color: #368ae2;
+    font-size: 22px;
+    font-weight: bold;
+    margin-right: 15px;
+    margin-left: 30px;
+}
+
+#register-button {
+    margin-left: 110px;
+}
+
+#login-button {
+    margin-left: 26px;
+}
+
+#login-button, #register-button {
+    display: inline;
+    padding: 0px;
+    width: 140px;
+    margin-top: 50px;
+    font-weight: 500;
+}
+
+.span2 {
+    position: absolute;
+    left: 38px;
+    bottom: 10px;
+}
+
+#validation-input{
+    width: 120px;
+}
+
+#button-send{
+    width: 140px;
+    padding: 0px;
+    display: inline;
+    border: none;
+    margin-left: 40px;
+    font-weight: 500;
+}
+
+/*---------------------*/
+/*输入框效果*/
+/*---------------------*/
+
+#user, #password,#validation-input,#email {
+    /*height: 40px;*/
+    /*width: 310px;*/
+    /*margin: 0px 0px 30px;*/
+
+    /*position: relative;*/
+    /*top: 100px;*/
+    /*left: 50px;*/
+    border-radius: 5px;
+    color: #333;
+    line-height: normal;
+    font-family: "Microsoft YaHei", Tahoma, Verdana, SimSun;
+    font-style: normal;
+    font-variant: normal;
+    font-stretch: normal;
+    font-weight: normal;
+    padding: 2px;
+    font-size: 15px;
+    outline: invert none medium;
+    text-shadow: 0px 1px 2px #fff;
+    background-position-x: left;
+    background-position-y: top;
+    background-size: auto;
+    background-origin: padding-box;
+    background-clip: border-box;
+    background: rgb(255, 255, 255) repeat-x scroll;
+    border: 1px solid #ccc;
+}
+
+#user:focus, #password:focus {
+    border: 1px solid #fafafa;
+    -webkit-box-shadow: 0px 0px 6px #007eff;
+    -moz-box-shadow: 0px 0px 5px #007eff;
+    box-shadow: 0px 0px 5px #007eff;
+
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>添加信息</title>
+        <link rel="stylesheet" href="css/buttons.css">
+        <link rel="stylesheet" href="css/add.css">
+    </head>
+    <body>
+        <div class="find">
+            <form action="/find" method="post">
+                <div class="find-box">
+                    <span class="span1">查找类型</span>
+                    <select name="kind" id="kind">
+                        <option>显示全部</option>
+                        <option>姓名</option>
+                        <option>学号</option>
+                        <option>性别</option>
+                        <option>班级</option>
+                        <option>专业号</option>
+                        <option>专业名</option>
+                        <option>学院</option>
+                    </select>
+                </div>
+                <div class="keyword">
+                    <span>输入关键字</span>
+                    <input type="text" name="keyword" id="keyword">
+                </div>
+                <input type="button" value="添加" id="button-add"
+                       class="button button-glow button-border button-rounded button-primary">
+                <input type="submit" value="查询" id="button-find"
+                       class="button button-glow button-rounded button-raised button-primary">
+            </form>
+        </div>
+
+        <div class="add">
+            <form action="/insert" method="post">
+            <div class="info">
+                <div class="info-1">
+                    <div class="info-1-1"><span>学　号</span><input type="text" name="student_id" id="studentId"></div>
+                    <div class="info-1-2"><span>姓　名</span><input type="text" name="name" id="name"></div>
+                    <div class="info-1-3"><span>性　别</span><input type="text" name="sex" id="sex"></div>
+                </div>
+                <div class="info-2">
+                    <div class="info-1-1"><span>班　级</span><input type="text" name="class" id="class"></div>
+                    <div class="info-1-2"><span>专业号</span><input type="text" name="professional_no" id="professionalNo"></div>
+                    <div class="info-1-3"><span>专业名</span><input type="text" name="professional_name" id="professionalName"></div>
+                </div>
+                <div class="info-3">
+                    <div class="info-1-1"><span>学　院</span><input type="text" name="college" id="college"></div>
+                    <div class="info-1-2"><span>年　级</span><input type="text" name="grade" id="grade"></div>
+                    <div class="info-1-3"><span>学　籍</span><input type="text" name="xj" id="xj"></div>
+                </div>
+            </div>
+            <div class="ok">
+                <input type="submit" value="OK" id="ok" class="button button-caution button-box button-jumbo">
+            </div>
+            </form>
+        </div>
+    </body>
+</html>
